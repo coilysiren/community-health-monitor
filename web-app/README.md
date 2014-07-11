@@ -22,6 +22,7 @@ color scheme
     white (some sort of off-white) 
     purple #8d53a6
     blue ?
+    green ?
     
 shapes: circles, curves, hearts
 
