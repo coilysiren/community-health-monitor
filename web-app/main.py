@@ -1,6 +1,7 @@
 # external scripts
 import flask
 import yaml
+import flask.ext.scss
 
 app = flask.Flask(__name__, static_folder='static', static_url_path='')
 app.config.from_object(__name__)
@@ -15,4 +16,5 @@ def index():
 
 if __name__ == '__main__':
     app.config['DEBUG'] = True
+    flask.ext.scss.Scss(app)
     app.run()
