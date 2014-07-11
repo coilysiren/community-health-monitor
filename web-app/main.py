@@ -9,7 +9,26 @@ for key, value in yaml.load(file('CONFIG.yaml','r')).items():
     app.config[key] = value
 
 @app.route('/')
+@app.route('/index')
 def index():
+    page_desc = ''
+    page_title = ''
+    return flask.render_template('views/index.html', page_title=page_title, page_desc=page_desc)
+
+@app.route('/about')
+def about():
+    page_desc = ''
+    page_title = ''
+    return flask.render_template('views/index.html', page_title=page_title, page_desc=page_desc)
+
+@app.route('/contact')
+def contact():
+    page_desc = ''
+    page_title = ''
+    return flask.render_template('views/index.html', page_title=page_title, page_desc=page_desc)
+
+@app.route('/profile')
+def profile():
     page_desc = ''
     page_title = ''
     return flask.render_template('views/index.html', page_title=page_title, page_desc=page_desc)
