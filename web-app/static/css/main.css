@@ -58,7 +58,12 @@
                               font-family: "Press Start 2P", cursive; }
 
                               #IMG_BACKGROUND {
-                                position: static; }
+                                position: static;
+                                height: 100%;
+                                width: 100%;
+                                background-image: url(http://i.imgur.com/KcarHKj.png);
+                                z-index: -1;
+                                opacity: 0.8; }
 
                                 nav {
                                   position: fixed;
