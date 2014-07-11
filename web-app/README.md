@@ -19,13 +19,9 @@ Design
 
 color scheme
 
-    white (some sort of off-white) 
-    purple #8d53a6
     blue ?
     green ?
     
 shapes: circles, curves, hearts
 
-Plus: http://i.imgur.com/0CehYNe.png
-
-Background: http://i.imgur.com/KcarHKj.png
+data pages look like analytics.twitter.com or google.com/analytics
