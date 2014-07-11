@@ -29,9 +29,8 @@ Organization:
 .visible {opacity: 1;}
 .invisible {opacity: 0;}
 .none {display: none;}
-.center {margin-left: auto; margin-right:}
 
-$primary_color = #7AADA6;
+$primary_color = #8d53a6;
 $secondary_color = #fda720;
 $body_color = rgba(#fda720, 0.3);
 
@@ -58,6 +57,7 @@ h3 a {transition: color 0.33s;}
 i {text-shadow: none;}
 
 h1, h2, h3, h4, h5, p {
+    text-align: center;
     -webkit-margin-before: 0;  
     -webkit-margin-after: 0;
     margin-top: 0;  
@@ -72,13 +72,25 @@ html, body, .texture {
 }
 
 body {
-    background-color: white;
+    background-color: green;
     overflow-x: hidden;
     font-family: $primary_font;
 }
 
 #IMG_BACKGROUND {
-    position: static;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-image: url(http://i.imgur.com/KcarHKj.png);
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#IMG_PLUS {
+    background-image: url(http://i.imgur.com/0CehYNe.png);
+    background-position: 50% 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 nav {
@@ -97,6 +109,19 @@ nav {
 //this media query is just for consistency
 @media all {
 
+    #index {
+        padding-top: 10%;
+        margin-left: 50px;
+        margin-right: 50px; 
+    }
+
+    #IMG_PLUS {
+        margin-top: 30px;
+        margin-bottom: 30px;
+        width: 200px;
+        height: 200px;
+    }
+
 }
 
 /*---------------
@@ -106,6 +131,14 @@ nav {
 @media all and (max-height: $mobile_xy), (max-width: $mobile_xy){
     
     html {font-size: 0.7em;}
+
+    #index {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    #IMG_PLUS {
+    }
 
 }
 
