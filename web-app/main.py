@@ -14,6 +14,10 @@ def index():
     page_title = ''
     return flask.render_template('views/index.html', page_title=page_title, page_desc=page_desc)
 
+@app.route('/static/<path:filename>') 
+def base_static(filename): 
+    return flask.send_from_directory(app.root_path + '/static/', filename)
+
 if __name__ == '__main__':
     app.config['DEBUG'] = True
     flask.ext.scss.Scss(app)
