@@ -11,7 +11,7 @@ for key, value in yaml.load(file('CONFIG.yaml','r')).items():
 def index():
     page_desc = ''
     page_title = ''
-    return flask.render_template('index.html', page_title=page_title, page_desc=page_desc)
+    return flask.render_template('views/index.html', page_title=page_title, page_desc=page_desc)
 
 if __name__ == '__main__':
     app.config['DEBUG'] = True
