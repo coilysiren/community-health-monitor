@@ -2,7 +2,7 @@
 import flask
 import yaml
 
-app = flask.Flask(__name__)
+app = flask.Flask(__name__, static_folder='static', static_url_path='')
 app.config.from_object(__name__)
 for key, value in yaml.load(file('CONFIG.yaml','r')).items():
     app.config[key] = value
