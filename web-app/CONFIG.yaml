@@ -5,7 +5,3 @@
 SITENAME: "Community Health Monitor"
 URL: ""
 DESC: "Monitor the health of your online community!"
-
-# assets are going here bc im lazy
-IMG_BACKGROUND: http://i.imgur.com/KcarHKj.png
-IMG_PLUS: http://i.imgur.com/0CehYNe.png
