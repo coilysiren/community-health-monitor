@@ -84,38 +84,48 @@
 
                                       nav {
                                         position: fixed;
-                                        padding-top: 0;
+                                        width: 100%;
                                         top: 0;
-                                        left: 0;
-                                        background-color: #8d53a6;
-                                        box-shadow: 0 15px 15px 7px rgba(0, 128, 0, 0.3); }
+                                        background-color: black;
+                                        box-shadow: 0 5px 5px 2px rgba(0, 128, 0, 0.3); }
 
                                         @media all {
-                                          .index {
-                                            padding-top: 10%;
-                                            margin-left: 100px;
-                                            margin-right: 100px;   }
-                                            .description {
+                                          nav {
+                                            height: 50px;
+                                            padding-left: 100px;
+                                            padding-right: 100px;   }
+                                            .index {
+                                              padding-top: 100px;
                                               margin-left: 100px;
                                               margin-right: 100px;   }
-                                              #IMG_PLUS_circle {
-                                                margin-top: 30px;
-                                                margin-bottom: 30px;   }
-                                                h2 {
-                                                  margin-bottom: 15px;   }
-                                                  p {
-                                                    margin-bottom: 10px;   }
+                                              .description {
+                                                margin-left: 100px;
+                                                margin-right: 100px;   }
+                                                #IMG_PLUS_circle {
+                                                  margin-top: 30px;
+                                                  margin-bottom: 30px;   }
+                                                  h2 {
+                                                    margin-bottom: 15px;   }
+                                                    p {
+                                                      margin-bottom: 10px;   }
 }
 
 @media all and (max-height: 500px), (max-width: 500px) {
   html {
     font-size: 0.7em;   }
-    .index {
-      margin-left: 15px;
-      margin-right: 15px;   }
-      .description {
-        margin-left: 0px;
-        margin-right: 0px;   }
+    nav {
+      position: static;
+      height: auto;
+      padding-left: 20px;
+      padding-right: 20px;   }
+      .index {
+        position: static;
+        padding-top: 50px;
+        margin-left: 15px;
+        margin-right: 15px;   }
+        .description {
+          margin-left: 0px;
+          margin-right: 0px;   }
 }
 
 .fa-linkedin {
