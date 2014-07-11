@@ -1,6 +1,11 @@
+# external scripts
 import flask
+import yaml
 
 app = flask.Flask(__name__)
+app.config.from_object(__name__)
+for key, value in yaml.load(file('CONFIG.yaml','r')).items():
+    app.config[key] = value
 
 @app.route('/')
 def index():
